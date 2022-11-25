@@ -17,29 +17,29 @@ const send = function (e) {
   if (numberYou <= 10 && numberYou != 0 && numberYou > 0) {
     if (btnRadioImpar.checked == true || btnRadioPar.checked == true) {
       if (soma % 2 == 0 && btnRadioPar.checked == true) {
-        result.innerText = `
-          A máquina escolheu o número: ${numberPc}
-          Você escolheu o número: ${numberYou}
-          Você colorou: ${btnRadioPar.value}
-          ---------- Você ganhou! ----------`;
+        result.innerHTML = `
+          <br>A máquina escolheu o número: <span class="span">${numberPc}</span><br>
+          Você escolheu o número: <span class="span">${numberYou}</span><br>
+          Você colorou: <span class="span">${btnRadioPar.value}</span><br>
+          <span class="ganhou">---------- Você ganhou! ----------</span>`;
       } else if (soma % 2 == 1 && btnRadioImpar.checked == true) {
-        result.innerText = `
-          A máquina escolheu o número: ${numberPc}
-          Você escolheu o número: ${numberYou}
-          Você colorou: ${btnRadioImpar.value}
-          ---------- Você ganhou! ----------`;
+        result.innerHTML = `
+          <br>A máquina escolheu o número: <span class="span">${numberPc}</span><br>
+          Você escolheu o número: <span class="span">${numberYou}</span><br>
+          Você colorou: <span class="span">${btnRadioImpar.value}</span><br>
+          <span class="ganhou">---------- Você ganhou! ----------</span>`;
       } else if (soma % 2 == 0 && btnRadioPar.checked == false) {
-        result.innerText = `
-          A máquina escolheu o número: ${numberPc}
-          Você escolheu o número: ${numberYou}
-          Você colorou: ${btnRadioImpar.value}
-          ---------- Você perdeu! ----------`;
+        result.innerHTML = `
+          <br>A máquina escolheu o número: <span class="span">${numberPc}</span><br>
+          Você escolheu o número: <span class="span">${numberYou}</span><br>
+          Você colorou: <span class="span">${btnRadioImpar.value}</span><br>
+          <span class="perdeu">---------- Você perdeu! ----------</span>`;
       } else if (soma % 2 == 1 && btnRadioImpar.checked == false) {
-        result.innerText = `
-          A máquina escolheu o número: ${numberPc}
-          Você escolheu o número: ${numberYou}
-          Você colorou: ${btnRadioPar.value}
-          ---------- Você perdeu! ----------`;
+        result.innerHTML = `
+          <br>A máquina escolheu o número: <span class="span">${numberPc}</span><br>
+          Você escolheu o número: <span class="span">${numberYou}</span><br>
+          Você colorou: <span class="span">${btnRadioPar.value}</span><br>
+          <span class="perdeu">---------- Você perdeu! ----------</span>`;
       }
     } else {
       result.innerText = "Escolha Ímpar ou Par";
