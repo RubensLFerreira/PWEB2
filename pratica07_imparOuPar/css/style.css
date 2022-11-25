@@ -15,3 +15,21 @@ body {
 #input-number {
   width: 15rem;
 }
+
+.span {
+  color: #d0a442;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.ganhou {
+  color: #04d361;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.perdeu {
+  color: #fc4242;
+  font-weight: bold;
+  text-transform: capitalize;
+}
