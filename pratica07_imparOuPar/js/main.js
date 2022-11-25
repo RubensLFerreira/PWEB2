@@ -14,32 +14,32 @@ const send = function (e) {
   let numberPc = Number(Math.floor(Math.random() * (max - min) + min));
   let soma = numberYou + numberPc;
 
-  if (numberYou <= 10) {
+  if (numberYou <= 10 && numberYou != 0 && numberYou > 0) {
     if (btnRadioImpar.checked == true || btnRadioPar.checked == true) {
       if (soma % 2 == 0 && btnRadioPar.checked == true) {
         result.innerText = `
-        A máquina escolheu o número: ${numberPc}
-        Você escolheu o número: ${numberYou}
-        Você colorou: ${btnRadioPar.value}
-        ---------- Você ganhou! ----------`;
+          A máquina escolheu o número: ${numberPc}
+          Você escolheu o número: ${numberYou}
+          Você colorou: ${btnRadioPar.value}
+          ---------- Você ganhou! ----------`;
       } else if (soma % 2 == 1 && btnRadioImpar.checked == true) {
         result.innerText = `
-        A máquina escolheu o número: ${numberPc}
-        Você escolheu o número: ${numberYou}
-        Você colorou: ${btnRadioImpar.value}
-        ---------- Você ganhou! ----------`;
+          A máquina escolheu o número: ${numberPc}
+          Você escolheu o número: ${numberYou}
+          Você colorou: ${btnRadioImpar.value}
+          ---------- Você ganhou! ----------`;
       } else if (soma % 2 == 0 && btnRadioPar.checked == false) {
         result.innerText = `
-        A máquina escolheu o número: ${numberPc}
-        Você escolheu o número: ${numberYou}
-        Você colorou: ${btnRadioImpar.value}
-        ---------- Você perdeu! ----------`;
+          A máquina escolheu o número: ${numberPc}
+          Você escolheu o número: ${numberYou}
+          Você colorou: ${btnRadioImpar.value}
+          ---------- Você perdeu! ----------`;
       } else if (soma % 2 == 1 && btnRadioImpar.checked == false) {
         result.innerText = `
-        A máquina escolheu o número: ${numberPc}
-        Você escolheu o número: ${numberYou}
-        Você colorou: ${btnRadioPar.value}
-        ---------- Você perdeu! ----------`;
+          A máquina escolheu o número: ${numberPc}
+          Você escolheu o número: ${numberYou}
+          Você colorou: ${btnRadioPar.value}
+          ---------- Você perdeu! ----------`;
       }
     } else {
       result.innerText = "Escolha Ímpar ou Par";
