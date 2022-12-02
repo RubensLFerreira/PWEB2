@@ -1,0 +1,3 @@
+Melhore o código da calculadora.
+Adicione validações para evitar erros.
+Remova a função eval. - Done
