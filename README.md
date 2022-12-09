@@ -11,4 +11,4 @@
 
 > GitCard https://gitcard-rubenslima.netlify.app
 
-> Avaliação N1 https://joyful-truffle-2e8318.netlify.app/#
+> Avaliação N1 - Parte 2 https://avaliacaon1-rubenslima.netlify.app
